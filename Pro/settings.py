@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-!mc1ykhpwo!@yy989!_!*=@zch(fx0nspf*07q4)htgu&69i_5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.railway.app', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
