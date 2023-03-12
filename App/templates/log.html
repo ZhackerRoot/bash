@@ -6,9 +6,8 @@
     
     <div class="form-group">
         <h1 style="text-align: center;"></h1>
-        <form method="POST">
-           {%csrf_token%}
-           {{ form.as_p}}     
+        <form method="POST">{% csrf_token %}
+           {{ form.as_p }}     
         <button type="submit" class="btn">Login</button>
          </form>
    </div>
