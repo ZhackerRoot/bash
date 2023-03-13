@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect
 from .forms import CustomForm
 from .models import Custom
+from django.views.decorators.csrf import csrf_token
 
-
-
+@csrf_exempt
 def login(request):
     form = CustomForm()
     if request.method == 'POST':
